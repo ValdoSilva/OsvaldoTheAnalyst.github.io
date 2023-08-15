@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Osvaldo The Analyst Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>Data Analyst Portfolio</strong> by Osvaldo N X da Silva</a>
+									<ul class="icons">
+										<li><a href="https://www.linkedin.com/in/osilva86/" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
+										<li><a href="https://github.com/ValdoSilva/PortfolioProjects" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h2>Data Cleaning in SQL</h2>
+									</header>
+									<p>In today's data-driven world, data analysts play a vital role in extracting valuable insights from large datasets. However, before analysis can begin, ensuring data quality is crucial. This is where SQL data cleaning comes into the picture. In this portfolio project, we explore why SQL data cleaning is of utmost importance and why it is an essential skill for every data analyst.</p>									
+									<hr class="major" />
+									<h3>Ensuring Data Accuracy and Integrity (Data Cleaning on Nahsville Housing data)</h3>
+									<p>SQL data cleaning involves identifying and rectifying errors, inconsistencies, and missing values within datasets. By doing so, data analysts can ensure that the data they work with is accurate, reliable, and consistent. Clean data serves as a solid foundation for robust analysis and confident decision-making. Below are few examples of cleaning data.</p>
+									<li><a href="https://github.com/ValdoSilva/PortfolioProjects/blob/main/Nashville%20Housing%20Data%20for%20Data%20Cleaning.xlsx">Nashville Housing data (raw)</a></li>
+									<p>Eliminate duplicate data, one can employ a Common Table Expression (CTE) to query the table order by unique ID, and subsequently delete the identified duplicates from the dataset.</p>
+									<span class="image main"><img src="images/duplicates.png" alt="" /></span>
+									<p>Utilizing the PARSENAME function, to split the OwnerAddress into distinct columns: Address, City, and State.</p>
+									<span class="image main"><img src="images/address breakdown.png" alt="" /></span>
+									<p>Modify the entries in the "soldAsVacant" column by replacing "N" with "No" and "Y" with "Yes".</p>
+									<span class="image main"><img src="images/change value in column.png" alt="" /></span>
+									<p>On my <a href="https://github.com/ValdoSilva/PortfolioProjects/blob/main/Data%20Cleaning%20Portfolio%20Project%20Queries%20(Nashville).sql">GitHub</a> account, you can find several additional functions that can be utilized in the data cleaning process. These include capabilities for standardizing date formats, populating property addresses, merging new tables into the existing ones, and removing unused columns.</p>
+									<a href="https://github.com/ValdoSilva/PortfolioProjects/blob/main/Data%20Cleaning%20Portfolio%20Project%20Queries%20(Nashville).sql" class="button">View Full Project in GitHub</a>
+									<hr class="major" />
+
+									<h2>Covid 19 Data Exploration</h2>
+									<p>The data utilized for this analysis was obtained from the trustworthy data repository 'ourworldindata.org'. The examination of this dataset encompasses various analytical tasks, such as computing daily death percentages in the United States, identifying the highest total reported deaths per country, and analyzing the count of COVID-19 vaccinated individuals. Although this portfolio project showcases only a subset of functions, you can find more of them on my <a href="https://github.com/ValdoSilva/PortfolioProjects/blob/main/COVID%20PortfolioProject-Data%20Exploration.sql">GitHub account.</a></p>
+									<li><a href="https://ourworldindata.org/covid-deaths">Covid 19 dataset (ourworldindata.org)</a></li>
+									<span class="image main"><strong>One way to utilize the search function in SQL is by querying data for a country that contains 'states,' similar to how you would search for information about the United States.</strong><img src="images/percentageDeathCovid.png" alt="" /></span>
+									<span class="image main"><strong>To determine the highest total reported deaths per country in SQL, using MAX function and arrange the results in descending order.</strong><img src="images/Max total death per country.png" alt="" /></span>
+									<span class="image main"><strong>Utilizing a CTE, we can create a temporary table to facilitate specific queries. In this scenario, we will join two tables: one containing data on COVID vaccination and the other on COVID deaths. The goal is to identify individuals who have been vaccinated against COVID-19 in each country and continent.</strong><img src="images/peopleVaccEachCountry.png" alt="" /></span>
+									<a href="https://github.com/ValdoSilva/PortfolioProjects/blob/main/COVID%20PortfolioProject-Data%20Exploration.sql" class="button">View Full Project in GitHub</a>
+
+
+									
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Homepage</a></li>
+										<li><a href="python.html">Python</a></li>
+										<li><a href="sql.html">SQL</a></li>
+										<li><a href="tableau.html">Tableau</a></li>
+										<li><a href="powerbi.html">Power BI</a></li>
+										<li><a href="excel.html">Excel</a></li>
+                                        <li><a href="https://github.com/ValdoSilva/PortfolioProjects">GitHub</a></li>
+										<li><a href="resume.html">Resume</a></li>
+									</ul>
+								</nav>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Get in touch</h2>
+									</header>
+									<p>Please feel free to contact me, a professional data analyst, using the provided contact information, should you require assistance or have any inquiries related to data analysis or its applications. <br/> I would be delighted to connect with prospective employers as I am actively seeking job opportunities as a data analyst.</p>
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="#">osvaldosilva.silva6@gmail.com</a></li>
+										<li class="icon solid fa-phone">(+44) 07447941057</li>
+										<li class="icon solid fa-home">07 Albion Yard, Albion Row<br />
+										Cambridge, United Kingdom</li>
+									</ul>
+								</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
